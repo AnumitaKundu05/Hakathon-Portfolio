@@ -1,0 +1,168 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #000000;
+    /* --bg-color: #fff; */
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+
+}
+
+section{
+    min-height: 15vh;
+    padding: 10rem 9% 2rem;
+
+     
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.Navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+.Navbar a:hover,
+.Navbar a.active {
+        color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+#home {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homecontent{
+    padding-left: 121px;
+    margin-top: 133px;
+}
+
+.homecontent h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+
+}
+
+spam {
+    color: #0ef;
+}
+
+.social-media a {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        height: 4rem;
+        background: transparent;
+        border: .2rem solid var(--main-color);
+        border-radius: 50%;
+        font-size: 2rem;
+        color: var(--main-color);
+        margin:  3rem 1.5rem 3rem 0;
+} 
+
+.social-media .btn {
+    display: unset;
+    padding: 14px 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+}
+
+.main-div{
+    display: flex;
+}
+
+.imagesContainer {
+	width: 1328px;
+	height: 563px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: rgba(0,0,0,0.2) 10px 10px 10px;
+}
+
+.imagesContainer img {
+	width: 564px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* images using CSS */
+.imageDiv {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-size: cover;
+}
+
+/* animation styles */
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	20% { opacity: 0; }
+	60% { opacity: 1; }
+	100% { opacity: 1; }
+}
+
+.fadeInClass {
+	animation-name: fadeIn;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+}
+
